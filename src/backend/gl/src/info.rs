@@ -658,7 +658,7 @@ pub(crate) fn query_all(
 
     let mut features = Features::NDC_Y_UP | Features::MUTABLE_COMPARISON_SAMPLER;
     // TODO: Fill out downlevel features correctly.
-    let mut downlevel = hal::DownlevelProperties::all_enabled();
+    let _downlevel = hal::DownlevelProperties::all_enabled();
     // TODO: Merge downlevel/legacy features?
     let mut legacy = LegacyFeatures::empty();
 
